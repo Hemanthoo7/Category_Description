@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="product.info.options.wrapper.bottom">
+            <block class="Dcw\Category\Block\AttributeShownTop" before="product.info.addtocart" name="product.showtop.bottom" template="Dcw_Category::attribute_showtop.phtml"/>
+        </referenceBlock>
+
+        <referenceContainer name="product.info.form.content">
+            <block class="Dcw\Category\Block\AttributeShownTop" before="-" name="product.showtop" template="Dcw_Category::attribute_showtop.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

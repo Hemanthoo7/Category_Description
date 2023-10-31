@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+ *
+ * @category  Dcw
+ * @package   Dcw_Category
+ * @copyright Copyright (C) 2023 Dotcomweavers
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Dcw_Category" setup_version="1.0.1">
+    </module>
+</config>

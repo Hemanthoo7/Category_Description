@@ -1,0 +1,20 @@
+<?php
+if ($block->checkCurrentProductIsSimple()) { ?>
+	<div class="swatch-opt product-showtop-main swatch-non-selectable">
+		<div class="custom-swatch-attribute-options">
+		<?php
+		$getAttributeValueHtml = $block->getAttributeValues();
+		$getProductStatus = $block->checkCurrentProductStockStatus();
+		$stockClass = "";
+		if (!$getProductStatus) {
+			$stockClass = "out-of-stock";
+		}
+		foreach($getAttributeValueHtml as $attributeResult) { ?>
+			<span class="swatch-attribute-label"><?php echo $attributeResult['label'];?></span>
+		    <div class="swatch-option text selected <?php echo $stockClass;?>">
+		    	<?php echo $attributeResult['value'];?>
+		    </div>
+		<?php } ?>
+		</div>
+	</div>
+<?php } ?>
